@@ -2,8 +2,12 @@ import "reflect-metadata";
 import {createConnection} from "typeorm";
 import {User} from "./entity/User";
 import { Session } from "./entity/Session";
+import { Role } from "./entity/Role";
 
 createConnection().then(async connection => {
+    const role = new Role();
+    role.name = "Bot";
+    await connection.manager.save(role);
 
     console.log("Inserting a new user into the database...");
     const user = new User();
@@ -11,6 +15,7 @@ createConnection().then(async connection => {
     user.login = "Saw";
     user.nick = "TS";
     user.password = "Some password";
+    user.roles = [role];
     await connection.manager.save(user);
     console.log("Saved a new user with id: " + user.id);
 

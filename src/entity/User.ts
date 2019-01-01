@@ -19,7 +19,9 @@ export class User {
     @Column()
     nick: string;
 
-    @ManyToMany(type => Role)
+    @ManyToMany(type => Role, metadata => metadata.users, {
+        cascade: false
+    })
     @JoinTable()
     roles: Role[];
 

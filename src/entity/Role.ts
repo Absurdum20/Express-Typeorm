@@ -10,7 +10,7 @@ export class Role {
     @Column()
     name: string;
 
-    @ManyToMany(type => User, {
+    @ManyToMany(type => User, metadata => metadata.roles, {
         cascade: false
     })
     @JoinTable()
