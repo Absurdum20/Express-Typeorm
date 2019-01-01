@@ -1,0 +1,24 @@
+{
+  "name": "express-typeorm",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Absurdum20/Express-Typeorm.git"
+  },
+  "keywords": [
+    "express",
+    "typeorm",
+    "node.js"
+  ],
+  "author": "Absurdum20",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Absurdum20/Express-Typeorm/issues"
+  },
+  "homepage": "https://github.com/Absurdum20/Express-Typeorm#readme"
+}
