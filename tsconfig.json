@@ -9,7 +9,7 @@
     ],
     "module": "commonjs",
     "moduleResolution": "node",
-    "outDir": "built/",
+    "outDir": "./build",
     "sourceMap": true,
     "target": "es6",
     "typeRoots": [
