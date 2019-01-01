@@ -10,7 +10,7 @@ export class Session {
 
     @OneToOne(type => User)
     @JoinColumn({
-        name: "userid"
+        name: "user_id"
     })
     user: User;
 
